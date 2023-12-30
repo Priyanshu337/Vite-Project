@@ -1,0 +1,117 @@
+.homepage-child-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 1.5rem;
+    align-content: center;
+
+    /* justify-content: space-evenly;
+    flex-direction: row; */
+
+}
+
+/* For First Card */
+.first-card {
+    color: black;
+    width: auto;
+    border: 2px solid #333;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.counter-container {
+    background-color: whitesmoke;
+    width: 90%;
+    box-shadow: 5px 5px 10px #888888;
+
+}
+
+/* For secound Card */
+
+.secound-card {
+    color: black;
+    width: auto;
+    border: 2px solid #333;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.multiverse-container {
+    background-color: whitesmoke;
+    width: 90%;
+    box-shadow: 5px 5px 10px #888888;
+
+}
+
+/* For Third Card */
+
+.third-card {
+    color: black;
+    width: auto;
+    border: 2px solid #333;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+.Qrcode-container {
+    background-color: whitesmoke;
+    width: 90%;
+    box-shadow: 5px 5px 10px #888888;
+
+}
+
+/* For Fourth Card */
+
+
+.fourth-card {
+    color: black;
+    width: auto;
+    border: 2px solid #333;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.Todolist-container {
+    background-color: whitesmoke;
+    width: 90%;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+/* For Fifth Card */
+
+
+.fifth-card {
+    color: black;
+    width: auto;
+    border: 2px solid #333;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+
+
+}
+
+/* For Sixth Card */
+
+.sixth-card {
+    color: black;
+    width: auto;
+    border: 2px solid #333;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+
+
+}

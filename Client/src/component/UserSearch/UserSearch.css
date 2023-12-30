@@ -1,0 +1,48 @@
+.search-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 250px;
+}
+
+
+.searchInput {
+    width: 40%;
+    border: 1px solid black;
+    height: 50px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profilename {
+    text-align: center;
+    background-color: white;
+    border-style: groove;
+    width: 40%;
+    color: black;
+    border: 1px solid;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.drop-down-container {
+    width: 40%;
+    border: #080707;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.search-results {
+    margin: 2px 0;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+}
