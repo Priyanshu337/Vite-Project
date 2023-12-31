@@ -12,6 +12,8 @@ import Counter from './component/HomePage/Counter/Counter';
 import Multiverse from './component/HomePage/Multiverse/Multiverse';
 import Qrcode from './component/HomePage/Qrcode/Qrcode';
 import TodoList from './component/HomePage/TodoList/TodoList';
+import Login from './pages/LoginPage/Login';
+import Signup from './pages/SignupPage/Signup';
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
+            <Route path="/" element={< Login />} />
             <Route path="/Home" element={< HomePage />} />
             <Route path="/Users" element={< NamePage value={value} setValue={setValue} />} />
             <Route path="/Images" element={< ImagePage value={value} />} />
@@ -34,6 +37,7 @@ function App() {
             <Route path="/Multiverse" element={<Multiverse />} />
             <Route path="/Qrcode" element={<Qrcode />} />
             <Route path="/TodoList" element={<TodoList />} />
+            <Route path="/Signup" element={<Signup />} />
 
           </Routes>
         </BrowserRouter>

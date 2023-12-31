@@ -20,8 +20,8 @@ export default function Comments({ value }: Cmnt) {
         console.log(response.data);
         const profile = response.data.find((user: { id: any; }) => user.id === value.id);
         setCmt(profile);
-
     }
+
     useEffect(() => {
         if (value?.id) {
             fetchcmnt();

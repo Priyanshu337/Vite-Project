@@ -21,9 +21,11 @@ function Navbar() {
                 <div className='nav-title'>
                     <h1>Priyanshu</h1>
                 </div>
-
-
+                {/* <div className='nav-logout'>
+                    <button onClick={btnClicked}>Logout</button>
+                </div> */}
             </div>
+
 
         </IconContext.Provider>
 

@@ -3,9 +3,11 @@
     height: 80px;
     display: flex;
     justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 8px 9px 11px 10px;
 }
+
 
 .menu-bar {
     margin-left: 2rem;
@@ -13,6 +15,18 @@
     justify-content: center;
     font-size: 2rem;
     background: none;
+}
+
+form-container>label {
+    color: black;
+}
+
+.nav-title {
+    text-align: center;
+}
+
+.nav-logout {
+    text-align: center;
 }
 
 .nav-menu-active {
@@ -77,11 +91,24 @@ span {
     margin-left: 16px;
 }
 
-.nav-title {
-    text-align: center;
-    margin-left: 850px;
-}
 
 .nav-title h1 {
     color: white;
+}
+
+.blackText {
+    color: black;
+    font-size: 26px;
+    font-weight: 102px;
+}
+
+.username-container {
+    color: black;
+    background-color: white;
+}
+
+
+.password-container {
+    color: black;
+    background-color: white;
 }

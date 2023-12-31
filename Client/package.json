@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
-    "axios": "^1.6.2",
+    "axios": "^1.6.3",
+    "boxicons": "^2.1.4",
     "fa-icons": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -29,6 +30,6 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "react-router-dom": "^6.20.1",
     "typescript": "^5.3.3",
-    "vite": "^4.4.5"
+    "vite": "^5.0.10"
   }
 }

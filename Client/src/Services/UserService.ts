@@ -1,4 +1,4 @@
-import axios from 'Axios';
+import axios from 'axios';
 
 export class UsersService {
     private static URL: String = 'https://jsonplaceholder.typicode.com'
