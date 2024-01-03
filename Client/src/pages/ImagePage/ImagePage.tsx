@@ -9,7 +9,7 @@ interface imgDisp {
 function ImagePage({ value }: imgDisp) {
     return (
         <div className='image-class'>
-            <h3>This is image page</h3>
+            <p className='heading-container'>This is image page</p>
             <ShowImage val={value} />
         </div>
     )

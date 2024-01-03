@@ -1,24 +1,31 @@
-.login-heading {
-    margin: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.main-container {
+    width: 1636px;
+    height: 344px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.second-container {
+    font-size: 10px;
+    width: 818px;
+    height: auto;
+    border: 2px solid #000000;
+
 }
 
 .form-container {
-    width: 500px;
-    height: 70vh;
+    width: 818px;
+    height: 80vh;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 20px;
     box-sizing: border-box;
-    padding: 20px 30px;
-    margin: 20px auto;
-
 }
 
 .title {

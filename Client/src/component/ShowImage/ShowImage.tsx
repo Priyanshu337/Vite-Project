@@ -30,7 +30,7 @@ export default function ShowImage({ val }: showImage) {
 
     return (
         <div className='image-container'>
-            {user?.url ? <img src={user?.url} /> : null}
+            {user?.url ? <img className='img-container' src={user?.url} /> : null}
         </div>
     )
 }
