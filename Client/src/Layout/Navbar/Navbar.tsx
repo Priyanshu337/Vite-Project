@@ -4,6 +4,8 @@ import './Navbar.css';
 import { IconContext } from 'react-icons';
 import * as FaIcons from "react-icons/fa";
 import Sidebar from './Sidebar/Sidebar';
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
 
@@ -15,11 +17,13 @@ function Navbar() {
         <IconContext.Provider value={{ color: 'white' }}>
             <div className='navbar'>
                 <div className='menu-bar'>
-                    < FaIcons.FaBars onClick={showSidebar} />
+                    <FaIcons.FaBars onClick={showSidebar} />
                 </div>
                 <Sidebar sidebar={sidebar} showSidebar={showSidebar} />
                 <div className='nav-title'>
-                    <h1>Priyanshu</h1>
+                    <Link to='/Login' > <h1>Priyanshu</h1></Link>
+
+
                 </div>
                 {/* <div className='nav-logout'>
                     <button onClick={btnClicked}>Logout</button>
@@ -27,7 +31,7 @@ function Navbar() {
             </div>
 
 
-        </IconContext.Provider>
+        </IconContext.Provider >
 
     )
 }

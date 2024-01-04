@@ -1,21 +1,25 @@
 import React from 'react'
 import { useState } from 'react';
 import './Login.css';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
-// import Signup from '../SignupPage/Signup';
 
 
 function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    // const handleLogin = () => {
-    //     // Add your login logic here
-    //     console.log('Logging in with:', { username, password });
-    // };
+    const btnClicked = () => {
+        axios.post('https://localhost:8080/login', { username, password })
+            .then(result => console.log(result))
+            .then(err => console.log(err))
+        setUsername('');
+        setPassword('');
+    }
+
     return (
         <div className='form-container'>
-            <div className='login-heading'>
+            <div className='login-form'>
                 <p className="title">Welcome back</p>
                 <form className="form">
                     <input type="email"
@@ -33,10 +37,9 @@ function Login() {
                     <p className="page-link">
                         <span className="page-link-label">Forgot Password?</span>
                     </p>
-                    <button className="form-btn">Log in</button>
+                    <button onClick={btnClicked} className="form-btn">Log in</button>
                 </form>
                 <p className="sign-up-label">
-
                     Don't have an account?
                     <span className="sign-up-link"><Link to="/Signup">Sign up </Link></span >
                 </p>

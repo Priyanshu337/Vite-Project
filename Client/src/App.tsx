@@ -28,16 +28,19 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={< Login />} />
+            <Route path="/Signup" element={<Signup />} />
+
             <Route path="/Home" element={< HomePage />} />
-            <Route path="/Users" element={< NamePage value={value} setValue={setValue} />} />
-            <Route path="/Images" element={< ImagePage value={value} />} />
-            <Route path="/Comments" element={< CommentPage value={value} />} />
-            <Route path="/*" element={<NotFoundPage />} />
             <Route path="/Counter" element={<Counter />} />
             <Route path="/Multiverse" element={<Multiverse />} />
             <Route path="/Qrcode" element={<Qrcode />} />
             <Route path="/TodoList" element={<TodoList />} />
-            <Route path="/Signup" element={<Signup />} />
+
+            <Route path="/Users" element={< NamePage value={value} setValue={setValue} />} />
+            <Route path="/Images" element={< ImagePage value={value} />} />
+            <Route path="/Comments" element={< CommentPage value={value} />} />
+            <Route path="/*" element={<NotFoundPage />} />
+
 
           </Routes>
         </BrowserRouter>
