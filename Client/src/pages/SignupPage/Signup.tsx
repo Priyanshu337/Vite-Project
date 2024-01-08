@@ -8,14 +8,14 @@ import { Link, useNavigate } from 'react-router-dom'
 function Signup() {
 
     const [name, setName] = useState('');
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const navigate = useNavigate()
 
     const btnClicked = (e: any) => {
         e.preventDefault()
-        axios.post('http://localhost:8080/signup', { name, username, password, confirmPassword })
+        axios.post('http://localhost:8080/signup', { name, email, password, confirmPassword })
             .then(result => console.log(result))
             .catch(err => console.log(err))
         navigate('/');
@@ -28,6 +28,7 @@ function Signup() {
                 <h3>Hello there </h3>
                 <p>This is Sign up page</p>
             </div> */}
+
             <div className='form-container'>
                 <div className='signup-heading'>
                     <p className="title"> Sign-up</p>
@@ -40,8 +41,8 @@ function Signup() {
 
                         <input type="text"
                             className="input-username"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             placeholder='Username' />
 
                         <input type="password"
