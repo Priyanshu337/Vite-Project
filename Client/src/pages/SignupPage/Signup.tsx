@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 function Signup() {
 
-    const [name, setName] = useState('');
+    const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -15,7 +15,7 @@ function Signup() {
 
     const btnClicked = (e: any) => {
         e.preventDefault()
-        axios.post('http://localhost:8080/signup', { name, email, password, confirmPassword })
+        axios.post('http://localhost:8080/signup', { username, email, password, confirmPassword })
             .then(result => console.log(result))
             .catch(err => console.log(err))
         navigate('/');
@@ -35,8 +35,8 @@ function Signup() {
                     <form className="form">
                         <input type="text"
                             className="input-username"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
                             placeholder='Name' />
 
                         <input type="text"
